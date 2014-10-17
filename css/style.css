@@ -1,5 +1,6 @@
 body {
 	background-color: LightGray;
+	font-family: 'Roboto', sans-serif;  	
 }
 
 div {
@@ -8,6 +9,42 @@ div {
 
 section {
 	border: 1px solid DarkGreen;
+}
+
+@-webkit-keyframes fontbulger {
+  0%, 100% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+  }
+}
+
+@-moz-keyframes fontbulger {
+  0%, 100% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+  }
+}
+
+@-o-keyframes fontbulger {
+  0%, 100% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+  }
+}
+
+@keyframes fontbulger {
+  0%, 100% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+  }
 }
 
 .top-navigation {
@@ -19,16 +56,50 @@ section {
     height: 70px;
     margin: 0 auto;
     padding: 0px 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 600;
+    font-size: 16px; 
 }
 
 img.logo {	
 	height: 70px;
 }
-.links li {	
+
+.top-navigation .links {
 	float: right;
+	color: #838994; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.top-navigation .links li {	
+	padding: 10px 0px 0px 10px;
 	display: inline-block;
 	margin: 1em;
+
+	-webkit-transition: color 1s ease;
+	moz-transition: color 1s ease;
+	o-transition: color 1s ease;
+	transition: color 1s ease;
 }
+
+.links :hover {
+	color: #333333;
+	cursor: pointer;
+/*	-webkit-animation: fontbulger 1s infinite;
+	-moz-animation: fontbulger 1s infinite;
+	-o-animation: fontbulger 1s infinite;
+	animation: fontbulger 1s infinite;*/
+}
+
+
 
 br {
 	clear: both;
