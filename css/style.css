@@ -9,3 +9,27 @@ div {
 section {
 	border: 1px solid DarkGreen;
 }
+
+.top-navigation {
+    background-color: #fff;
+}
+
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+img.logo {	
+	height: 70px;
+}
+.links li {	
+	float: right;
+	display: inline-block;
+	margin: 1em;
+}
+
+br {
+	clear: both;
+}
