@@ -117,9 +117,7 @@ br {
     text-align: center;
 }
 
-.whatis {
-	background: url("../images/buy-now-bg.jpg") center bottom no-repeat;
-}
+
 
 .introduction h1 {
 	margin: 1em;
@@ -143,9 +141,11 @@ br {
 	padding: 16px 26px;
 	line-height: 1.33;
 	background-color: #f15a29;
-	float: right;
 	margin-right: 20px;
 	font-size: 1em;
+}
+.button-right {
+	float: right;
 }
 
 .half {
@@ -161,6 +161,9 @@ br {
 .watch span {
 	float:left;
 	margin-left: 20px;
+}
+.watch img {
+	margin-bottom: -11px;
 }
 .lift {
 	padding-bottom: 4px;
@@ -278,3 +281,28 @@ footer .trademark {
 	color: #3f729b;
 }
 
+
+.whatis {
+	background: url("../images/buy-now-bg.jpg") center bottom no-repeat;
+}
+
+aside > h1 {
+	color: #f15a29;
+	font-size: 2em;
+	font-weight: bolder;
+	margin: 1em 0;
+}
+
+aside > p {
+	color: black;
+	margin: 1em 0;
+	width: 240px;
+	text-align: left;
+	line-height: 2em;
+
+}
+
+.whatis aside {
+	width: 40em;
+	text-align: left;
+}
