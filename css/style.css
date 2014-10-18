@@ -4,11 +4,35 @@ body {
 }
 
 div {
-	border: 1px solid Chocolate;
+	/*border: 1px solid Chocolate;*/
 }
 
 section {
 	border: 1px solid DarkGreen;
+}
+
+
+@-webkit-keyframes bouncing-arrow {
+  0%, 100% { margin-top: 0px; }
+  50% { margin-bottom: 2em; }
+}
+
+
+@-moz-keyframes bouncing-arrow {
+  0%, 100% { margin-top: 0px; }
+  50% { margin-bottom: 2em; }
+}
+
+
+@-o-keyframes bouncing-arrow {
+  0%, 100% { margin-top: 0px; }
+  50% { margin-bottom: 2em; }
+}
+
+
+@keyframes bouncing-arrow {
+  0%, 100% { margin-top: 0px; }
+  50% { margin-bottom: 2em; }
 }
 
 @-webkit-keyframes fontbulger {
@@ -49,17 +73,20 @@ section {
 
 .top-navigation {
     background-color: #fff;
+    height: 70px;
 }
 
-.top-navigation > .content {
-    width: 970px;
-    height: 70px;
+
+.content {
+	width: 970px;
+
     margin: 0 auto;
     padding: 0px 15px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
 
 .top-navigation .links .active {
     color: #4c5058;
@@ -99,8 +126,98 @@ img.logo {
 	animation: fontbulger 1s infinite;*/
 }
 
-
-
 br {
 	clear: both;
 }
+
+.billboard {
+	width: 100%;
+	height: auto;
+
+}
+
+.billboard-introduction {
+	color: white;
+	background: url("../images/first-background.jpg") center bottom no-repeat;	
+}
+
+.billboard h1 {
+	font-size: 2em;
+}
+
+.introduction {
+	font-family: 'Roboto', sans-serif;
+	min-height:600px;
+	color:white;
+	background: url("../images/first-background.jpg") center bottom no-repeat;
+	padding: 200px 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduction h1 {
+	margin: 1em;
+	font-size: 3em;
+	font-letter-spacing: 2em;
+	font-weight: 20;
+}
+
+.introduction h3 {
+	margin: 1em 1em 2em 1em;
+	font-size: 2em;
+	font-letter-spacing: 2em;
+	font-weight: 20;
+}
+
+.button {
+	color: white;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	background-color: #f15a29;
+	float: right;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+.half {
+	width: 49%;
+	display: inline;
+	float: left;
+}
+.watch {
+	margin-top: 6px;
+	vertical-align: middle;
+}
+
+.watch span {
+	float:left;
+	margin-left: 20px;
+}
+.lift {
+	padding-bottom: 4px;
+}
+
+.downarrow {
+	/*-webkit-animation: bouncing-arrow 1s ease infinite;*/
+	-moz-animation: bouncing-arrow 1s ease infinite;
+	-o-animation: bouncing-arrow 1s ease infinite;
+	animation: bouncing-arrow 1s ease infinite;
+	padding-top: 40px;
+}
+
+
+
+
+
+
