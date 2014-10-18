@@ -1,6 +1,7 @@
 body {
 	background-color: LightGray;
-	font-family: 'Roboto', sans-serif;  	
+	font-family: 'Roboto', sans-serif;  
+	font-weight: lighter;	
 }
 
 div {
@@ -74,14 +75,17 @@ section {
 .top-navigation {
     background-color: #fff;
     height: 70px;
+    position:fixed;
+    width: 100%;
 }
 
 
 .content {
 	width: 970px;
-
+	text-align: center;
     margin: 0 auto;
     padding: 0px 15px;
+    background-color: white;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
@@ -216,6 +220,39 @@ br {
 	padding-top: 40px;
 }
 
+.cases h1 {
+	font-size: 3em;
+	padding: 2em 0 1em 0;
+}
+
+.cases h2 {
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 1em 0 1em 0;
+}
+
+.cases p {
+	font-size: 1.3em;
+	padding-bottom: 2em;
+}
+
+.devices img {
+	height: 127px;
+	width: 127px;
+	margin: 0 auto;
+}
+
+.cases .devices {
+    width: 33%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    /*border: 1px solid black;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 4em;
+}
 
 
 
